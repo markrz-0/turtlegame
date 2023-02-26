@@ -1,0 +1,28 @@
+SERVER_IP = '127.0.0.1'
+PORT = 2137
+
+BUF_SIZE = 131072
+
+GOAL = 100
+
+# please keep it even
+PLAYERS_PER_GAME = 2
+
+SIZE = (640, 480)
+PLAYER_INIT_X = 200
+PLAYER_INIT_Y_OFFSET = 200
+PLAYER_SPEED = 10
+
+class Signals:
+    READY = 0
+    WIN = 1
+    LOST = 2
+    SPACE_PRESS = 3 # OBSOLETE
+    WAITING = 4
+    FULL = 5
+    GAME_INIT = 6
+    GAME_UPDATE = 7
+    MOVE_UP = 8
+    MOVE_DOWN = 9
+    MOVE_LEFT = 10
+    MOVE_RIGHT = 11
