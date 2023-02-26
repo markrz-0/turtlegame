@@ -87,10 +87,6 @@ class Game:
                 'e': self.team1_score if player.team == 2 else self.team2_score
             }
 
-            if player.index == 0:
-                print(self.dot_data)
-                print("\n")
-
             client_conn.conn.send(json.dumps(to_send).encode('utf-8'))
 
             data = json.loads(client_conn.conn.recv(BUF_SIZE).decode('utf-8'))

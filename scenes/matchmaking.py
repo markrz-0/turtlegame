@@ -50,6 +50,7 @@ class MatchmakingScreen(BaseScene):
         threading.Thread(target=self.wait_for_match).start()
 
     def draw(self):
+        self.t.clear()
 
         self.particles.draw()
 
