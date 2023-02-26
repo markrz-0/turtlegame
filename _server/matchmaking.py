@@ -15,7 +15,7 @@ class Matchmaking:
 
     def start(self):
         while True:
-            time.sleep(1/60)
+            time.sleep(1)
             if len(self.connected) >= PLAYERS_PER_GAME:
                 team_1 = []
                 for _ in range(PLAYERS_PER_GAME // 2):
